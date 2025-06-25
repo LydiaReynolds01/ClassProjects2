@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ISpy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xwa-YC-Cqx">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puppy" translatesAutoresizingMaskIntoConstraints="NO" id="4WO-UN-azP">
+                                        <rect key="frame" x="0.0" y="0.0" width="520" height="763"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xea-Gd-Smc" firstAttribute="bottom" secondItem="4WO-UN-azP" secondAttribute="bottom" constant="89" id="990-E5-Rhx"/>
+                                    <constraint firstItem="4WO-UN-azP" firstAttribute="leading" secondItem="xea-Gd-Smc" secondAttribute="leading" id="LKV-7N-qpR"/>
+                                    <constraint firstItem="4WO-UN-azP" firstAttribute="top" secondItem="xea-Gd-Smc" secondAttribute="top" id="LT2-45-8e3"/>
+                                    <constraint firstAttribute="trailing" secondItem="4WO-UN-azP" secondAttribute="trailing" constant="-127" id="V0H-ye-TFn"/>
+                                    <constraint firstAttribute="bottom" secondItem="4WO-UN-azP" secondAttribute="bottom" id="qrg-sf-BVn"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="WYK-8q-MOv"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="xea-Gd-Smc"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xwa-YC-Cqx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LcL-Nr-N84"/>
+                            <constraint firstItem="xwa-YC-Cqx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XcM-qq-0lO"/>
+                            <constraint firstAttribute="bottom" secondItem="xwa-YC-Cqx" secondAttribute="bottom" id="dqk-mS-I2S"/>
+                            <constraint firstItem="xwa-YC-Cqx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xxX-aB-4yA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="4WO-UN-azP" id="Fh3-vO-0ZS"/>
+                        <outlet property="scrollView" destination="xwa-YC-Cqx" id="LHO-cl-uTq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94" y="-15"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="puppy" width="520" height="354"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
